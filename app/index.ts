@@ -1,5 +1,5 @@
 import express from 'express';
-import { PORT } from './config';
+import { PORT } from '@config/environment/EnvironmentConfig';
 import expressApp from './express-app';
 
 const StartServer = async () => {

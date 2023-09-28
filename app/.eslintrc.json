@@ -1,12 +1,14 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended",
     "prettier",
     "plugin:prettier/recommended",
+    "plugin:jest/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended"
   ],
@@ -15,7 +17,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["prettier", "@typescript-eslint"],
+  "plugins": ["prettier", "jest", "@typescript-eslint"],
   "rules": {
     "no-console": "warn",
     "no-unused-vars": [
